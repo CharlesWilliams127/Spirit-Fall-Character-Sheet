@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+}
+h1 {
+    color: #fff;
+    font-size: 24pt;
+}
+h2 {
+    color: #fff;
+    font-size: 18pt;
+}
+
+/*Custom Classes*/
+
+/*Content headers and extensions*/
+.char-sheet-content-header {
+    background-color: #3a3c3d;
+    padding: 5px;
+}
+.char-sheet-content-header-main {
+    text-align: center;
+}
+.char-sheet-content-header-elem{
+    display: inline;
+    margin: 5px;
+}
+.char-sheet-content-header-elem h1, h2{
+    display: inline;
+}
+.char-sheet-vert-content-margin {
+    margin-bottom: 30px;
+}
+.header-bar-input-label {
+    position: absolute;
+    top: 100%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 8pt;
+}
+
+.label-container {
+    position: relative;
+}
+.char-sheet-attribute-container {
+    display: inline-block;
+    width: 66%;
+    vertical-align: top;
+}
+.char-sheet-column-div {
+    display: inline-block;
+    width: 28%;
+    margin: 0px 2%;
+    vertical-align: top;
+}
+.char-sheet-column-div-right {
+    float: right;
+    margin-right: 4%;
+}
+.char-sheet-column-div-left {
+    margin-left: 3%;
+}
+.char-sheet-skill {
+    margin: 5px 0px;
+}
+
+/*Reusable Plug-in Classes*/
+.right-float {
+    float: right;
+}
+.left-float {
+    float: left;
+}
+
+/*Input Fields*/
+.char-sheet-content-header-elem input{
+    border-radius: 10px;
+    font-size: 16pt;
+    padding: 5px 5px 10px 5px;
+}
+.radial-button-group {
+    /* float: right;*/
+}
+.long-text-input {
+    width: 15%;
+    min-width: 200px;
+}
+.short-text-input {
+    width: 2%;
+    min-width: 40px;
+    text-align: center;
+}

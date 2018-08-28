@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <link href='SpiritFall.css' rel='stylesheet' type='text/css'>
+ 	<title>SpiritFall</title>
+ 	
+	<!-- Import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 
+  
+
+</head>
+<body>
+    <div class="char-sheet-content-header char-sheet-content-header-main char-sheet-vert-content-margin">
+        <div class="char-sheet-content-header-elem">
+            <h1>Name</h1>
+            <input type="text" name = "char-name" class="long-text-input">
+        </div>
+        <div class="char-sheet-content-header-elem">
+            <h1>Background</h1>
+            <input type="text" name = "char-background" class="long-text-input">
+        </div>
+        <div class="char-sheet-content-header-elem">
+            <h1>XP</h1>
+            <input type="text" name = "char-xp" class="short-text-input">
+        </div>
+        <div class="char-sheet-content-header-elem">
+            <h1>Life</h1>
+            <span class="label-container">
+                <input type="text" name = "char-curr-life" class="short-text-input">
+                <label class="header-bar-input-label" for="char-curr-life">Current</label>
+            </span>
+            <span class="label-container">
+                <input type="text" name = "char-max-life" class="short-text-input">
+                <label class="header-bar-input-label" for="char-max-life">Max</label>
+            </span>
+        </div>
+        <div class="char-sheet-content-header-elem">
+            <h1>Faith</h1>
+            <span class="label-container">
+                <input type="text" name = "char-curr-faith" class="short-text-input">
+                <label class="header-bar-input-label" for="char-curr-faith">Current</label>
+            </span>
+            <span class="label-container">
+                <input type="text" name = "char-max-faith" class="short-text-input">
+                <label class="header-bar-input-label" for="char-Max-faith">Max</label>
+            </span>
+        </div>
+    </div>
+    <div class="char-sheet-attribute-container char-sheet-vert-content-margin">
+        <div class = "char-sheet-column-div">
+            <div class="char-sheet-content-header">
+                <div class="char-sheet-content-header-elem">
+                    <h2>Mind</h2>
+                    <!-- TODO: add JS to ensure only 1 option is picked -->
+                    <div class = "char-sheet-content-header-elem radial-button-group right-float">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "char-sheet-column-div">
+            <div class="char-sheet-content-header">
+                <div class="char-sheet-content-header-elem">
+                    <h2>Body</h2>
+                    <!-- TODO: add JS to ensure only 1 option is picked -->
+                    <div class = "char-sheet-content-header-elem radial-button-group right-float">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "char-sheet-column-div">
+            <div class="char-sheet-content-header">
+                <div class="char-sheet-content-header-elem">
+                    <h2>Spirit</h2>
+                    <!-- TODO: add JS to ensure only 1 option is picked -->
+                    <div class = "char-sheet-content-header-elem radial-button-group right-float">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="char-sheet-column-div char-sheet-column-div-right char-sheet-vert-content-margin">
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Senses</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+    </div>
+    <div class="char-sheet-column-div char-sheet-column-div-left char-sheet-vert-content-margin">
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Athletics</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Combat</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Diplomacy</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Engineering</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+    </div>
+    <div class="char-sheet-column-div  char-sheet-vert-content-margin">
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Knowledge</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Medicine</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Old World</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-content-header">
+            <div class="char-sheet-content-header-elem">
+                <h1>Science</h1>
+            </div>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+        <div class="char-sheet-skill">
+            <input type="text" name="skill-climb" class="short-text-input">
+            <label for="skill-climb"><b>Climb:</b> up and down</label>
+        </div>
+    </div>
+    
+</body>
+</html>
