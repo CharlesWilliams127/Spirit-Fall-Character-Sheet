@@ -1,14 +1,14 @@
 body {
     font-family: sans-serif;
 }
-h1 {
+/*h1 {
     color: #fff;
     font-size: 24pt;
 }
 h2 {
     color: #fff;
     font-size: 18pt;
-}
+}*/
 
 /*Custom Classes*/
 
@@ -20,11 +20,7 @@ h2 {
 .char-sheet-content-header-main {
     text-align: center;
 }
-.char-sheet-content-header-elem{
-    display: inline;
-    margin: 5px;
-}
-.char-sheet-content-header-elem h1, h2{
+.char-sheet-container-elem h1, h2{
     display: inline;
 }
 .char-sheet-vert-div-block {
@@ -33,6 +29,32 @@ h2 {
 .char-sheet-vert-content-margin {
     margin-bottom: 30px;
 }
+
+/*New Stuff*/
+.char-sheet-column-div {
+    display: inline-block;
+    width: 45%;
+    margin: 5px 2% 10px 2%;
+}
+.char-sheet-container {
+    display: block;
+    background-color: #3a3c3d;
+    padding: 5px;
+}
+.char-sheet-container h1, .char-sheet-container h2 {
+    color: #fff;
+}
+.char-sheet-container h1 {
+    font-size: 24pt;
+}
+.char-sheet-container h2 {
+    font-size: 18pt;
+}
+.char-sheet-container-elem {
+    display: block;
+}
+/*End New Stuff*/
+
 .header-bar-input-label {
     position: absolute;
     top: 100%;
@@ -49,12 +71,6 @@ h2 {
 .char-sheet-attribute-container {
     display: inline-block;
     width: 66%;
-    vertical-align: top;
-}
-.char-sheet-column-div {
-    display: inline-block;
-    width: 28%;
-    margin: 0px 2%;
     vertical-align: top;
 }
 .char-sheet-column-div-right {
@@ -83,7 +99,7 @@ h2 {
 }
 
 /*Input Fields*/
-.char-sheet-content-header-elem input, .char-sheet-vert-div-block input{
+.char-sheet-container-elem input, .char-sheet-vert-div-block input{
     border-radius: 10px;
     font-size: 16pt;
     padding: 5px 5px 10px 5px;

@@ -3,29 +3,23 @@
 <head>
 	<meta charset="utf-8" />
     <link href='SpiritFall.css' rel='stylesheet' type='text/css'>
- 	<title>SpiritFall</title>
- 	
-	<!-- Import jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
- 
-  
-
+    <title>SpiritFall</title>
 </head>
 <body>
-    <div class="char-sheet-content-header char-sheet-content-header-main char-sheet-vert-content-margin">
-        <div class="char-sheet-content-header-elem">
+    <div class="char-sheet-vert-content-margin char-sheet-column-div">
+        <div class="char-sheet-container-elem">
             <h1>Name</h1>
             <input type="text" name = "char-name" class="long-text-input">
         </div>
-        <div class="char-sheet-content-header-elem">
+        <div class="char-sheet-container-elem">
             <h1>Background</h1>
             <input type="text" name = "char-background" class="long-text-input">
         </div>
-        <div class="char-sheet-content-header-elem">
+        <div class="char-sheet-container-elem">
             <h1>XP</h1>
             <input type="text" name = "char-xp" class="short-text-input">
         </div>
-        <div class="char-sheet-content-header-elem">
+        <div class="char-sheet-container-elem">
             <h1>Life</h1>
             <span class="label-container">
                 <input type="text" name = "char-curr-life" class="short-text-input">
@@ -36,7 +30,7 @@
                 <label class="header-bar-input-label" for="char-max-life">Max</label>
             </span>
         </div>
-        <div class="char-sheet-content-header-elem">
+        <div class="char-sheet-container-elem">
             <h1>Faith</h1>
             <span class="label-container">
                 <input type="text" name = "char-curr-faith" class="short-text-input">
@@ -48,13 +42,12 @@
             </span>
         </div>
     </div>
-    <div class="char-sheet-attribute-container char-sheet-vert-content-margin">
         <div class = "char-sheet-column-div">
             <div class="char-sheet-content-header">
-                <div class="char-sheet-content-header-elem">
+                <div class="char-sheet-container-elem">
                     <h2>Mind</h2>
                     <!-- TODO: add JS to ensure only 1 option is picked -->
-                    <div class = "char-sheet-content-header-elem radial-button-group right-float">
+                    <div class = "char-sheet-container-elem radial-button-group right-float">
                         <input type="radio">
                         <input type="radio">
                         <input type="radio">
@@ -66,10 +59,10 @@
         </div>
         <div class = "char-sheet-column-div">
             <div class="char-sheet-content-header">
-                <div class="char-sheet-content-header-elem">
+                <div class="char-sheet-container-elem">
                     <h2>Body</h2>
                     <!-- TODO: add JS to ensure only 1 option is picked -->
-                    <div class = "char-sheet-content-header-elem radial-button-group right-float">
+                    <div class = "char-sheet-container-elem radial-button-group right-float">
                         <input type="radio">
                         <input type="radio">
                         <input type="radio">
@@ -77,14 +70,14 @@
                         <input type="radio">
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
         <div class = "char-sheet-column-div">
             <div class="char-sheet-content-header">
-                <div class="char-sheet-content-header-elem">
+                <div class="char-sheet-container-elem">
                     <h2>Spirit</h2>
                     <!-- TODO: add JS to ensure only 1 option is picked -->
-                    <div class = "char-sheet-content-header-elem radial-button-group right-float">
+                    <div class = "char-sheet-container-elem radial-button-group right-float">
                         <input type="radio">
                         <input type="radio">
                         <input type="radio">
@@ -94,9 +87,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="char-sheet-column-div char-sheet-column-div-right char-sheet-vert-content-margin">
-        <div class="char-sheet-content-header char-sheet-vert-content-margin">
+        <div class="char-sheet-container char-sheet-vert-content-margin">
                 <h1>Armor</h1>
             <div class="char-sheet-vert-div-block">
                 <div>
@@ -139,7 +130,7 @@
             </div>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Senses</h1>
             </div>
         </div>
@@ -156,7 +147,7 @@
             <label for="skill-spot"><b>Spot:</b> something hidden; see something subtle or distant</label>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Scavenger</h1>
             </div>
         </div>
@@ -181,7 +172,7 @@
             <label for="skill-track"><b>Track:</b> footprints; determine source creatures, numbers, age</label>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Vehicles</h1>
             </div>
         </div>
@@ -201,10 +192,9 @@
             <input type="text" name="skill-construction" class="short-text-input">
             <label for="skill-construction"><b>Construction:</b> use cranes, excavators, bulldozers</label>
         </div>
-    </div>
     <div class="char-sheet-column-div char-sheet-column-div-left char-sheet-vert-content-margin">
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Athletics</h1>
             </div>
         </div>
@@ -230,7 +220,7 @@
             <label for="skill-throw"><b>Throw:</b> things long distances, at targets; catch things</label>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Combat</h1>
             </div>
         </div>
@@ -256,7 +246,7 @@
             <label for="skill-strike"><b>Strike:</b> a target with your hands, feet, and other body parts</label>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Diplomacy</h1>
             </div>
         </div>
@@ -277,7 +267,7 @@
             <label for="skill-read"><b>Read:</b> someone’s body language; detect lies; sense motive</label>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Engineering</h1>
             </div>
         </div>
@@ -305,7 +295,7 @@
     </div>
     <div class="char-sheet-column-div  char-sheet-vert-content-margin">
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Knowledge</h1>
             </div>
         </div>
@@ -338,7 +328,7 @@
             <label for="skill-staten-island"><b>Staten Island:</b> navigation; landmarks; streetwise; factions</label>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Medicine</h1>
             </div>
         </div>
@@ -355,7 +345,7 @@
             <label for="skill-surgery"><b>Surgery:</b> when first aid is not enough</label>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Old World</h1>
             </div>
         </div>
@@ -372,7 +362,7 @@
             <label for="skill-poetry"><b>Poetry:</b> write fiction, speak demonic words</label>
         </div>
         <div class="char-sheet-content-header">
-            <div class="char-sheet-content-header-elem">
+            <div class="char-sheet-container-elem">
                 <h1>Science</h1>
             </div>
         </div>
