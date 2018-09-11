@@ -6,6 +6,7 @@
     <title>SpiritFall</title>
 </head>
 <body>
+    <!--ATTRIBUTES AND INFO-->
     <div class="char-sheet-vert-content-margin char-sheet-column-div">
         <div class="char-sheet-container-elem">
             <h1>Name</h1>
@@ -23,25 +24,25 @@
             <h1>Life</h1>
             <span class="label-container">
                 <input type="text" name = "char-curr-life" class="short-text-input">
-                <label class="header-bar-input-label" for="char-curr-life">Current</label>
+                <label class="char-sheet-container-input-label" for="char-curr-life">Current</label>
             </span>
             <span class="label-container">
                 <input type="text" name = "char-max-life" class="short-text-input">
-                <label class="header-bar-input-label" for="char-max-life">Max</label>
+                <label class="char-sheet-container-input-label" for="char-max-life">Max</label>
             </span>
         </div>
         <div class="char-sheet-container-elem">
             <h1>Faith</h1>
             <span class="label-container">
                 <input type="text" name = "char-curr-faith" class="short-text-input">
-                <label class="header-bar-input-label" for="char-curr-faith">Current</label>
+                <label class="char-sheet-container-input-label" for="char-curr-faith">Current</label>
             </span>
             <span class="label-container">
                 <input type="text" name = "char-max-faith" class="short-text-input">
-                <label class="header-bar-input-label" for="char-Max-faith">Max</label>
+                <label class="char-sheet-container-input-label" for="char-Max-faith">Max</label>
             </span>
         </div>
-        <div class="char-sheet-container">
+        <div class="char-sheet-container char-sheet-small-vert-space">
             <div class="char-sheet-container-elem">
                 <h2>Mind</h2>
                 <!-- TODO: add JS to ensure only 1 option is picked -->
@@ -54,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="char-sheet-container">
+        <div class="char-sheet-container char-sheet-small-vert-space">
             <div class="char-sheet-container-elem">
                 <h2>Body</h2>
                 <!-- TODO: add JS to ensure only 1 option is picked -->
@@ -67,9 +68,7 @@
                 </div>
             </div>
         </div> 
-
-
-        <div class="char-sheet-container">
+        <div class="char-sheet-container char-sheet-small-vert-space">
             <div class="char-sheet-container-elem">
                 <h2>Spirit</h2>
                 <!-- TODO: add JS to ensure only 1 option is picked -->
@@ -83,59 +82,108 @@
             </div>
         </div>
     </div>
+
+    <!--ARMOR-->
     <div class="char-sheet-vert-content-margin char-sheet-column-div">
         <div class="char-sheet-container">
             <h1>Armor</h1>
-            <div class="char-sheet-vert-div-block">
+            <div class="char-sheet-vert-div-block char-sheet-small-vert-space">
                 <div class = "char-sheet-armor-elem char-sheet-armor-elem-title">
                     <h2>Head</h2>
                 </div>
                 <div class = "char-sheet-armor-elem char-sheet-armor-elem-content">
                     <div>
-                        <input type="text" name = "char-name" class="long-text-input">
-                        <input type="text" name = "char-name" class="short-text-input">
+                        <span class="label-container">
+                            <input type="text" name = "head-name" class="long-text-input">
+                            <label class="char-sheet-container-input-label" for="head-name">Armor Name</label>
+                        </span>
+                        <span class="label-container">
+                            <input type="text" name = "head-weight" class="short-text-input">
+                            <label class="char-sheet-container-input-label" for="head-weight">Weight</label>
+                        </span>
                     </div>
                     <div>
-                        <input type="text" name = "char-name" class="med-text-input">
-                        <input type="text" name = "char-name" class="short-text-input">
-                        <input type="text" name = "char-name" class="short-text-input">
+                        <span class="label-container">
+                                <input type="text" name = "head-blocks-against" class="med-text-input">
+                                <label class="char-sheet-container-input-label" for="head-blocks-against">Blocks Against</label>
+                        </span>
+                        <span class="label-container">
+                            <input type="text" name = "head-current" class="short-text-input">
+                            <label class="char-sheet-container-input-label" for="head-current">Current</label>
+                        </span>
+                        <span class="label-container">
+                            <input type="text" name = "head-max" class="short-text-input">
+                            <label class="char-sheet-container-input-label" for="head-max">Max</label>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div class="char-sheet-vert-div-block">
+            <div class="char-sheet-vert-div-block char-sheet-small-vert-space">
                     <div class = "char-sheet-armor-elem char-sheet-armor-elem-title">
                         <h2>Torso</h2>
                     </div>
                     <div class = "char-sheet-armor-elem char-sheet-armor-elem-content">
                         <div>
-                            <input type="text" name = "char-name" class="long-text-input">
-                            <input type="text" name = "char-name" class="short-text-input">
+                            <span class="label-container">
+                                <input type="text" name = "torso-name" class="long-text-input">
+                                <label class="char-sheet-container-input-label" for="torso-name">Armor Name</label>
+                            </span>
+                            <span class="label-container">
+                                <input type="text" name = "torso-weight" class="short-text-input">
+                                <label class="char-sheet-container-input-label" for="torso-weight">Weight</label>
+                            </span>
                         </div>
                         <div>
-                            <input type="text" name = "torso-blocks-against" class="med-text-input">
-                            <input type="text" name = "char-name" class="short-text-input">
-                            <input type="text" name = "char-name" class="short-text-input">
+                            <span class="label-container">
+                                <input type="text" name = "torso-blocks-against" class="med-text-input">
+                                <label class="char-sheet-container-input-label" for="torso-blocks-against">Blocks Against</label>
+                            </span>
+                            <span class="label-container">
+                                <input type="text" name = "torso-current" class="short-text-input">
+                                <label class="char-sheet-container-input-label" for="torso-current">Current</label>
+                            </span>
+                            <span class="label-container">
+                                <input type="text" name = "torso-max" class="short-text-input">
+                                <label class="char-sheet-container-input-label" for="torso-max">Max</label>
+                            </span>
                         </div>
                     </div>
                 </div>
-            <div class="char-sheet-vert-div-block">
+            <div class="char-sheet-vert-div-block char-sheet-small-vert-space">
                 <div class = "char-sheet-armor-elem char-sheet-armor-elem-title">
                     <h2>Legs</h2>
                 </div>
                 <div class = "char-sheet-armor-elem char-sheet-armor-elem-content">
                     <div>
-                        <input type="text" name = "char-name" class="long-text-input">
-                        <input type="text" name = "char-name" class="short-text-input">
+                        <<span class="label-container">
+                            <input type="text" name = "legs-name" class="long-text-input">
+                            <label class="char-sheet-container-input-label" for="legs-name">Armor Name</label>
+                        </span>
+                        <span class="label-container">
+                            <input type="text" name = "legs-weight" class="short-text-input">
+                            <label class="char-sheet-container-input-label" for="legs-weight">Weight</label>
+                        </span>
                     </div>
                     <div>
-                        <input type="text" name = "char-name" class="med-text-input">
-                        <input type="text" name = "char-name" class="short-text-input">
-                        <input type="text" name = "char-name" class="short-text-input">
+                            <span class="label-container">
+                                    <input type="text" name = "torso-blocks-against" class="med-text-input">
+                                    <label class="char-sheet-container-input-label" for="torso-blocks-against">Blocks Against</label>
+                                </span>
+                                <span class="label-container">
+                                    <input type="text" name = "torso-current" class="short-text-input">
+                                    <label class="char-sheet-container-input-label" for="torso-current">Current</label>
+                                </span>
+                                <span class="label-container">
+                                    <input type="text" name = "torso-max" class="short-text-input">
+                                    <label class="char-sheet-container-input-label" for="torso-max">Max</label>
+                                </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--SKILLS-->
         <div class="char-sheet-content-header">
             <div class="char-sheet-container-elem">
                 <h1>Senses</h1>
