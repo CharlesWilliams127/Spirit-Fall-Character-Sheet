@@ -34,7 +34,7 @@ h2 {
 .char-sheet-column-div {
     display: inline-block;
     vertical-align: top;
-    width: 45%;
+    width: 38%;
     margin: 5px 2% 10px 2%;
 }
 .char-sheet-container {
@@ -53,6 +53,20 @@ h2 {
 }
 .char-sheet-container-elem {
     display: block;
+}
+
+/*armor display*/
+.char-sheet-armor-elem {
+    display: inline-block;
+}
+.char-sheet-armor-elem-title {
+    width: 17%;
+    padding-right: 2%;
+    vertical-align: top;
+}
+.char-sheet-armor-elem-content {
+    width: 79%;
+    text-align: right;
 }
 /*End New Stuff*/
 
@@ -109,8 +123,12 @@ h2 {
     /* float: right;*/
 }
 .long-text-input {
-    width: 15%;
+    width: 20%;
     min-width: 200px;
+}
+.med-text-input {
+    width: 15%;
+    min-width: 142px;
 }
 .short-text-input {
     width: 2%;
